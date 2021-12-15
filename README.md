@@ -3,8 +3,8 @@
 
 # Instructions to run and install the Jaslan Keylogger
 ## Option 1:
-- Download and run the executable file logger.exe
--Before entering an email into the program, go to gmail settings and turn ON "Less secure app access." Otherwise, gmail will block the sign to the email. 
+* Download and run the executable file logger.exe
+* Before entering an email into the program, go to gmail settings and turn ON "Less secure app access." Otherwise, gmail will block the sign to the email. 
 -Now, enter email into program
 -When entering password, the text will be invisible for security purposes.
 - Press enter to start the Keylogger program
