@@ -10,6 +10,7 @@
 - Press enter to start the Keylogger program
 - Continue typing words into any application and monitor email inbox for captured keystrokes
 - Press escape to quit the program at any time
+- 
  -The program will run in any IDE with python 3.0 
 ## Option 2 (if executable file fails):
 -Download/ copy source code into IDE of choice
